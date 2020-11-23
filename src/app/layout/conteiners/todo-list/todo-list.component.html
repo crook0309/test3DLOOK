@@ -1,0 +1,12 @@
+<div class="todo-wrapper">
+    <app-add-todo></app-add-todo>
+    <div class="wrapper">
+        <ul class=" todo-list">
+            <div *ngFor="let todoItem of todoList; let i = index;">
+                <app-item-todo [item]="todoItem" [itemIndex]="i">
+                </app-item-todo>
+            </div>
+            <div class="total" *ngIf="!isTasks()">Not Displayed</div>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<li>
+    <div class="list-item">
+        <div class="item index">{{itemIndex+1}}</div>
+        <div class="item title">{{item.title}}</div>
+        <div class="item  text">{{item.text}}</div>
+        <div class="btn-wrap">
+            <button class="btn" type="button" (click)="deleteTask(item)">Delete</button>
+        </div>
+    </div>
+</li>
